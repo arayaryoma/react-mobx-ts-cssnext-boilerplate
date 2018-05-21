@@ -7,11 +7,17 @@
     "start:dev": "webpack-dev-server --mode development",
     "build:prd": "npm run clean && webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "tslint": "tslint 'src/**/*.ts?(x)'",
+    "tslint:fix": "tslint 'src/**/*.ts?(x)' --fix"
   },
   "lint-staged": {
     "*.{ts,tsx,js,json,css,md}": [
       "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "npm run tslint:fix",
       "git add"
     ]
   },
