@@ -26,8 +26,7 @@ const config = {
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
-        new OptimizeCSSAssetsPlugin({
-        })
+        new OptimizeCSSAssetsPlugin({})
     ],
     module: {
         rules: [
