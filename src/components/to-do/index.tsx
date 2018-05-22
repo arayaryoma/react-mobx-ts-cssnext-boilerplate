@@ -1,5 +1,5 @@
-import * as React from "react";
 import { observer } from "mobx-react";
+import * as React from "react";
 import ToDoState, { ToDo } from "../../store/to-do-store";
 
 export default class ToDoComponent extends React.Component {
@@ -25,7 +25,7 @@ class ToDoList extends React.Component<{ toDoState: ToDoState }> {
     public render() {
         return (
             <ul>
-                {this.props.toDoState.toDoList.map(item => (
+                {this.props.toDoState.toDoList.map((item) => (
                     <div>
                         <ToDoItem item={item}/>
                         <button onClick={() => this.props.toDoState.remove(item._id)}>Remove</button>

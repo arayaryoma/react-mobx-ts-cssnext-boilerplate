@@ -22,6 +22,6 @@ export default class ToDoState {
     }
 
     public remove(id: number) {
-        this.toDoList = this.toDoList.filter(item => item._id !== id);
+        this.toDoList = this.toDoList.filter((item) => item._id !== id);
     }
 }
