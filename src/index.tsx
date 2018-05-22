@@ -5,10 +5,10 @@ import ToDoComponent from "./components/to-do";
 import "./styles/main.css";
 
 render(
-    <BrowserRouter>
-        <div>
-            <Route path="/" component={ToDoComponent}/>
-        </div>
-    </BrowserRouter>
-    , document.getElementById("root"),
+  <BrowserRouter>
+    <div>
+      <Route path="/" component={ToDoComponent} />
+    </div>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
