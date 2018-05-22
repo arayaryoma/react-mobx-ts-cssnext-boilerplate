@@ -56,7 +56,9 @@
     "TypeScript",
     "React",
     "cssnext",
-    "MobX"
+    "MobX",
+    "Webpack",
+    "css-modules"
   ],
   "author": "Ryoma Abe <r1o.ryoma.abe@gmail.com>",
   "license": "MIT"
